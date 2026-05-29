@@ -1,0 +1,6 @@
+{
+  "name": "Palette Pro",
+  "description": "Tool professionale per analisi, diagnosi e ottimizzazione di palette colore per brand designer e creativi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
