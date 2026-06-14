@@ -553,7 +553,7 @@ export default function App() {
     printWindow.document.write(`
       <html>
         <head>
-          <title>Report Palette Pro - ${projectName || "Brand Identity"}</title>
+          <title>Report PaletteFixer - ${projectName || "Brand Identity"}</title>
           <style>
             @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;600;700&display=swap');
             body { 
@@ -585,7 +585,7 @@ export default function App() {
         <body>
           <div class="header">
             <div>
-              <div class="subtitle">Palette Design Pro Report</div>
+              <div class="subtitle font-bold text-[#9F6C68]">PaletteFixer Report</div>
               <h1 class="title">${projectName || "Senza Nome"}</h1>
             </div>
             <button onclick="window.print()" style="background-color: #9F6C68; color: white; border: none; padding: 10px 20px; font-size: 12px; font-family: inherit; font-weight: 600; border-radius: 6px; cursor: pointer;">Stampa / Salva in PDF</button>
@@ -648,7 +648,7 @@ export default function App() {
           </div>
 
           <div style="margin-top: 50px; border-top: 1px solid #E5E1DC; padding-top: 20px; font-size: 9px; color: #AAA; text-align: center;">
-            Certificato rilasciato da Palette Pro - Piattaforma di Diagnosi Colore Avanzata. Stampato il ${new Date().toLocaleDateString('it-IT')}.
+            Certificato rilasciato da PaletteFixer - Piattaforma di Diagnosi Colore Avanzata. Stampato il ${new Date().toLocaleDateString('it-IT')}.
           </div>
         </body>
       </html>
@@ -670,7 +670,7 @@ export default function App() {
       await delay(800);
       setLoadingStep("Analisi dello schema cromatico e coerenza...");
       await delay(600);
-      setLoadingStep("Palette Pro sta analizzando i tuoi colori...");
+      setLoadingStep("PaletteFixer sta analizzando i tuoi colori...");
 
       const res = await fetch("/api/analyze", {
         method: "POST",
@@ -760,11 +760,11 @@ export default function App() {
             <Pipette size={16} strokeWidth={2.2} />
           </div>
           <div>
-            <h1 className="text-sm font-extrabold tracking-wider flex items-center gap-1 leading-none">
-              <span className="text-[#7A7570] font-black uppercase">PALETTE</span>
-              <span className="text-[#9F6C68] font-medium uppercase">PRO</span>
+            <h1 className="text-sm font-extrabold tracking-wider flex items-center gap-0.5 leading-none">
+              <span className="text-[#7A7570] font-black uppercase">Palette</span>
+              <span className="text-[#9F6C68] font-black uppercase">Fixer</span>
             </h1>
-            <p className="text-[9px] text-[#9F6C68]/85 uppercase tracking-widest font-semibold mt-1">Diagnosi &amp; Ottimizzazione Colore</p>
+            <p className="text-[9px] text-[#9F6C68]/85 uppercase tracking-widest font-semibold mt-1">Analisi e ottimizzazione palette colore</p>
           </div>
         </div>
 
